@@ -1,0 +1,40 @@
+<%- include('./layout/header'); -%>
+
+    <%- include('./layout/partials/navbar'); -%>
+
+        <section id="GUI" class="section-theme">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 mx-auto">
+                        <div class="box-theme p-md-5 p-3">
+                            <form class="form-theme" method="POST" action="/createRDDWallet" id="rddWallet">
+                                <div class="section-title">Create a new wallet</div>
+
+
+                                <p class="alert-success">
+
+                                </p>
+
+                                <p class="alert-danger">
+
+                                </p>
+
+                                <div class="form-group">
+                                    <!-- <label for="walletName">Name</label> -->
+                                    <input type="text" class="form-control" id="walletName" name="walletName" placeholder="Enter a RDD wallet name." required>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="Wallet btn btn-theme btn-success mb-2" value="Submit">Create a new wallet</button>
+                                    <button type="reset" id="walletCancel" class="btn btn-theme btn-warning">Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <%- include('./layout/footer'); -%>
+            <!-- /GUI-->
+
+            <script type="text/JavaScript" src="/js/createRDD.js"></script>
